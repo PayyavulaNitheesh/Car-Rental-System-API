@@ -1,0 +1,4 @@
+POSTGRES_ROOT_PASSWORD=password
+POSTGRES_DB=carRentalSystem_Sprint1
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=admin
