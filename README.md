@@ -5,4 +5,4 @@ Most of the exceptions have been handled while hitting an endpoint
 Dockerfile and docker-compose.yml files have written.
 
 # Technologies used/learnt:
-Spring Boot MVC, Spring Data JPA, Postgres (DB),  Docker, AWS RDS, AWS Elastic Beanstalk
+Spring Boot MVC, Spring Data JPA, Postgres (DB),  Docker, AWS RDS, AWS Elastic Kubernetes Service
