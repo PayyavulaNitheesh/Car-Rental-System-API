@@ -54,7 +54,7 @@ public class CarInventoryService implements CarInventoryServiceInterface {
 	@Override
 	public List<CarInventory> getAvailableCars() throws CarInventoryException {
 		List<CarInventory> allCars = getAllCars();
-		List<CarInventory> availableCars = allCars.stream().filter(s -> s.isCarAvailablity() == true).toList();
+		List<CarInventory> availableCars = allCars.stream().filter(s -> s.isCarAvailablity() == true).collect(Collectors.toList());
 		if(CarInventoryException.checkCarInventory(availableCars)) {
 			throw new CarInventoryException("None of the cars are available.");
 		}
