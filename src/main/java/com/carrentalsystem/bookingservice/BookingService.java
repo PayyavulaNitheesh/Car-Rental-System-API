@@ -86,7 +86,7 @@ public class BookingService implements BookingServiceInterface {
 			throw new BookingException("No bookings found for the DL number");
 		}
 		List<Booking> retrievedBookings = allBookings.stream().filter(s -> s.getBookedcustomerDlNum().equals(bookedCustomer))
-				.toList();
+				.collect(Collectors.toList());
 		return retrievedBookings;
 	}
 
